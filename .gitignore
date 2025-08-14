@@ -25,6 +25,10 @@ log.md
 .pocket-prompt/
 tests/libraries/
 tests/logs/
+test-library/
+test-library2/
+server.log
+*.log
 
 # OS-generated files
 .DS_Store
