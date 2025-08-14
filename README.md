@@ -1,8 +1,23 @@
 # Pocket Prompt
 
-**Your personal LLM command center.** A unified interface and storage pool for all your AI interactions - prompts, agents, commands, templates, and context - owned and controlled by you.
+**Your personal LLM context manager.** A unified interface and storage pool for all your AI context - prompts, agents, commands, templates, and knowledge - **owned and controlled by you**.
 
-Think of it as your **AI toolkit in a single binary**: a fast, keyboard-driven interface for managing, organizing, and deploying your personal collection of LLM resources across all your devices and workflows.
+Think of it as your **portable AI context toolkit**: a fast, keyboard-driven interface for managing, organizing, and deploying your personal collection of LLM resources across all your devices and workflows.
+
+## Our Focus: Context Management, Not LLM Communication
+
+**Pocket Prompt is intentionally scoped** as a context preparation and management tool. We focus on:
+
+✅ **Managing your AI context** (prompts, templates, agents, knowledge)  
+✅ **Organizing and searching** your personal AI resources  
+✅ **Rendering and preparing** context for LLM interactions  
+✅ **Portable, standard formats** that work with any AI tool  
+
+❌ **We are NOT trying to become an LLM messaging interface**  
+❌ **We don't send messages to AI services**  
+❌ **We don't handle API keys or model communications**  
+
+**Why this matters:** Your AI context is valuable intellectual property that should be portable, searchable, and version-controlled - independent of any specific AI service or vendor.
 
 ## Why Pocket Prompt?
 
@@ -23,12 +38,13 @@ Pocket Prompt is your **unified command center** for all LLM interactions:
 - **HTTP API**: iOS Shortcuts, web apps, and integrations
 - **Git Sync**: Multi-device access with version control
 
-### 💾 **Own Your Data**
-- **Plain Text**: Markdown files with YAML frontmatter
-- **Local First**: Everything stored on your machine
-- **Git-Friendly**: Perfect version control integration  
-- **Portable**: Single binary, no dependencies
-- **Future-Proof**: Standard formats that work everywhere
+### 💾 **Own Your Context, Ensure Portability**
+- **Plain Text**: Markdown files with YAML frontmatter - readable by any tool
+- **Local First**: Your valuable context lives on your machine, not locked in cloud services
+- **Git-Friendly**: Perfect version control integration for tracking context evolution
+- **Vendor Agnostic**: Works with ChatGPT, Claude, Gemini, local models, or future AI tools
+- **Zero Lock-in**: Standard formats ensure your context remains yours forever
+- **Future-Proof**: When AI services change, your context remains accessible
 
 ### 🔍 **Intelligent Organization**
 - **Fuzzy Search**: Find anything instantly
@@ -79,6 +95,28 @@ pocket-prompt render analysis-v2 --var data=Q3-metrics > results-v2.txt
 - **Shared Git Repos**: Team prompt libraries with version control
 - **Consistent Standards**: Shared templates ensure uniform output
 - **Audit Trail**: Full history of prompt evolution and usage
+
+## Context Portability Philosophy
+
+**Your AI context is intellectual property** - it should be portable, searchable, and completely under your control.
+
+### Why Context Portability Matters
+
+- **AI Tools Change**: Services come and go, but your hard-earned prompts and context should persist
+- **Vendor Independence**: Switch between ChatGPT, Claude, local models, or future AI tools seamlessly  
+- **Team Collaboration**: Share context via standard formats without platform lock-in
+- **Version Control**: Track evolution of your AI interactions with proper git history
+- **Future-Proofing**: Standard markdown + YAML ensures accessibility regardless of technology shifts
+
+### What We Store For You
+
+- **Prompts**: Your refined AI instructions and conversation starters
+- **Context**: Project-specific knowledge, constraints, and domain expertise  
+- **Templates**: Reusable structures for consistent AI interactions
+- **Agents**: Defined AI personas and roles for specific use cases
+- **Variables**: Parameterized context for flexible, reusable prompts
+
+**The Goal**: Make your AI context as portable and durable as your source code.
 
 ## Installation
 
@@ -578,7 +616,7 @@ Control output format with the `format` parameter:
 
 ### iOS Shortcuts Integration
 
-The API returns content directly in HTTP responses, perfect for iOS Shortcuts:
+The API returns content directly in HTTP responses, perfect for iOS Shortcuts. **Note**: Pocket Prompt prepares and delivers your context - you then use it with your preferred AI service (ChatGPT, Claude, etc.):
 
 #### Basic Prompt Access
 1. **Get Contents of URL**: `http://localhost:8080/pocket-prompt/render/my-prompt`
