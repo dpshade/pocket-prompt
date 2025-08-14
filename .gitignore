@@ -23,7 +23,8 @@ pocket-prompt-test
 *.db*
 log.md
 .pocket-prompt/
-test-library/
+tests/libraries/
+tests/logs/
 
 # OS-generated files
 .DS_Store
